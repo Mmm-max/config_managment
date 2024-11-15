@@ -1,150 +1,150 @@
-// Dependencies Graph
+// Folder Dependencies Graph
 digraph {
-	curl [label=curl]
-	libc6 [label=libc6]
-	curl -> libc6
-	libc6 [label=libc6]
-	"libgcc-s1" [label="libgcc-s1"]
-	libc6 -> "libgcc-s1"
-	"libgcc-s1" [label="libgcc-s1"]
-	"gcc-10-base" [label="gcc-10-base"]
-	"libgcc-s1" -> "gcc-10-base"
-	"libgcc-s1" [label="libgcc-s1"]
-	libc6 [label=libc6]
-	"libgcc-s1" -> libc6
-	libc6 [label=libc6]
-	libcrypt1 [label=libcrypt1]
-	libc6 -> libcrypt1
-	libcrypt1 [label=libcrypt1]
-	libc6 [label=libc6]
-	libcrypt1 -> libc6
-	curl [label=curl]
-	libcurl4 [label=libcurl4]
-	curl -> libcurl4
-	libcurl4 [label=libcurl4]
-	libbrotli1 [label=libbrotli1]
-	libcurl4 -> libbrotli1
-	libbrotli1 [label=libbrotli1]
-	libc6 [label=libc6]
-	libbrotli1 -> libc6
-	libcurl4 [label=libcurl4]
-	libc6 [label=libc6]
-	libcurl4 -> libc6
-	libcurl4 [label=libcurl4]
-	"libgssapi-krb5-2" [label="libgssapi-krb5-2"]
-	libcurl4 -> "libgssapi-krb5-2"
-	"libgssapi-krb5-2" [label="libgssapi-krb5-2"]
-	libc6 [label=libc6]
-	"libgssapi-krb5-2" -> libc6
-	"libgssapi-krb5-2" [label="libgssapi-krb5-2"]
-	"libcom-err2" [label="libcom-err2"]
-	"libgssapi-krb5-2" -> "libcom-err2"
-	"libgssapi-krb5-2" [label="libgssapi-krb5-2"]
-	libk5crypto3 [label=libk5crypto3]
-	"libgssapi-krb5-2" -> libk5crypto3
-	"libgssapi-krb5-2" [label="libgssapi-krb5-2"]
-	"libkrb5-3" [label="libkrb5-3"]
-	"libgssapi-krb5-2" -> "libkrb5-3"
-	"libgssapi-krb5-2" [label="libgssapi-krb5-2"]
-	libkrb5support0 [label=libkrb5support0]
-	"libgssapi-krb5-2" -> libkrb5support0
-	libcurl4 [label=libcurl4]
-	"libidn2-0" [label="libidn2-0"]
-	libcurl4 -> "libidn2-0"
-	"libidn2-0" [label="libidn2-0"]
-	libc6 [label=libc6]
-	"libidn2-0" -> libc6
-	"libidn2-0" [label="libidn2-0"]
-	libunistring2 [label=libunistring2]
-	"libidn2-0" -> libunistring2
-	libcurl4 [label=libcurl4]
-	"libldap-2.4-2" [label="libldap-2.4-2"]
-	libcurl4 -> "libldap-2.4-2"
-	"libldap-2.4-2" [label="libldap-2.4-2"]
-	libc6 [label=libc6]
-	"libldap-2.4-2" -> libc6
-	"libldap-2.4-2" [label="libldap-2.4-2"]
-	libgnutls30 [label=libgnutls30]
-	"libldap-2.4-2" -> libgnutls30
-	"libldap-2.4-2" [label="libldap-2.4-2"]
-	"libgssapi3-heimdal" [label="libgssapi3-heimdal"]
-	"libldap-2.4-2" -> "libgssapi3-heimdal"
-	"libldap-2.4-2" [label="libldap-2.4-2"]
-	"libsasl2-2" [label="libsasl2-2"]
-	"libldap-2.4-2" -> "libsasl2-2"
-	"libldap-2.4-2" [label="libldap-2.4-2"]
-	"libldap-common" [label="libldap-common"]
-	"libldap-2.4-2" -> "libldap-common"
-	libcurl4 [label=libcurl4]
-	"libnghttp2-14" [label="libnghttp2-14"]
-	libcurl4 -> "libnghttp2-14"
-	"libnghttp2-14" [label="libnghttp2-14"]
-	libc6 [label=libc6]
-	"libnghttp2-14" -> libc6
-	libcurl4 [label=libcurl4]
-	libpsl5 [label=libpsl5]
-	libcurl4 -> libpsl5
-	libpsl5 [label=libpsl5]
-	"libidn2-0" [label="libidn2-0"]
-	libpsl5 -> "libidn2-0"
-	libpsl5 [label=libpsl5]
-	libc6 [label=libc6]
-	libpsl5 -> libc6
-	libpsl5 [label=libpsl5]
-	libunistring2 [label=libunistring2]
-	libpsl5 -> libunistring2
-	libcurl4 [label=libcurl4]
-	librtmp1 [label=librtmp1]
-	libcurl4 -> librtmp1
-	librtmp1 [label=librtmp1]
-	libc6 [label=libc6]
-	librtmp1 -> libc6
-	librtmp1 [label=librtmp1]
-	libgmp10 [label=libgmp10]
-	librtmp1 -> libgmp10
-	librtmp1 [label=librtmp1]
-	libgnutls30 [label=libgnutls30]
-	librtmp1 -> libgnutls30
-	librtmp1 [label=librtmp1]
-	libhogweed5 [label=libhogweed5]
-	librtmp1 -> libhogweed5
-	librtmp1 [label=librtmp1]
-	libnettle7 [label=libnettle7]
-	librtmp1 -> libnettle7
-	librtmp1 [label=librtmp1]
-	zlib1g [label=zlib1g]
-	librtmp1 -> zlib1g
-	libcurl4 [label=libcurl4]
-	"libssh-4" [label="libssh-4"]
-	libcurl4 -> "libssh-4"
-	"libssh-4" [label="libssh-4"]
-	libc6 [label=libc6]
-	"libssh-4" -> libc6
-	"libssh-4" [label="libssh-4"]
-	"libgssapi-krb5-2" [label="libgssapi-krb5-2"]
-	"libssh-4" -> "libgssapi-krb5-2"
-	"libssh-4" [label="libssh-4"]
-	"libssl1.1" [label="libssl1.1"]
-	"libssh-4" -> "libssl1.1"
-	"libssh-4" [label="libssh-4"]
-	zlib1g [label=zlib1g]
-	"libssh-4" -> zlib1g
-	libcurl4 [label=libcurl4]
-	"libssl1.1" [label="libssl1.1"]
-	libcurl4 -> "libssl1.1"
-	"libssl1.1" [label="libssl1.1"]
-	libc6 [label=libc6]
-	"libssl1.1" -> libc6
-	"libssl1.1" [label="libssl1.1"]
-	<debconf-2.0> [label=<debconf-2.0>]
-	"libssl1.1" -> <debconf-2.0>
-	libcurl4 [label=libcurl4]
-	zlib1g [label=zlib1g]
-	libcurl4 -> zlib1g
-	zlib1g [label=zlib1g]
-	libc6 [label=libc6]
-	zlib1g -> libc6
-	curl [label=curl]
-	zlib1g [label=zlib1g]
-	curl -> zlib1g
+	repo [label=repo]
+	docs [label=docs]
+	repo -> docs
+	docs [label=docs]
+	_themes [label=_themes]
+	docs -> _themes
+	docs [label=docs]
+	dev [label=dev]
+	docs -> dev
+	docs [label=docs]
+	_templates [label=_templates]
+	docs -> _templates
+	docs [label=docs]
+	community [label=community]
+	docs -> community
+	docs [label=docs]
+	_static [label=_static]
+	docs -> _static
+	docs [label=docs]
+	user [label=user]
+	docs -> user
+	repo [label=repo]
+	".github" [label=".github"]
+	repo -> ".github"
+	".github" [label=".github"]
+	workflows [label=workflows]
+	".github" -> workflows
+	".github" [label=".github"]
+	ISSUE_TEMPLATE [label=ISSUE_TEMPLATE]
+	".github" -> ISSUE_TEMPLATE
+	repo [label=repo]
+	ext [label=ext]
+	repo -> ext
+	repo [label=repo]
+	".git" [label=".git"]
+	repo -> ".git"
+	".git" [label=".git"]
+	objects [label=objects]
+	".git" -> objects
+	".git" [label=".git"]
+	hooks [label=hooks]
+	".git" -> hooks
+	".git" [label=".git"]
+	branches [label=branches]
+	".git" -> branches
+	".git" [label=".git"]
+	refs [label=refs]
+	".git" -> refs
+	".git" [label=".git"]
+	logs [label=logs]
+	".git" -> logs
+	".git" [label=".git"]
+	info [label=info]
+	".git" -> info
+	repo [label=repo]
+	tests [label=tests]
+	repo -> tests
+	tests [label=tests]
+	testserver [label=testserver]
+	tests -> testserver
+	tests [label=tests]
+	certs [label=certs]
+	tests -> certs
+	repo [label=repo]
+	src [label=src]
+	repo -> src
+	src [label=src]
+	requests [label=requests]
+	src -> requests
+	docs [label=docs]
+	_themes [label=_themes]
+	docs -> _themes
+	docs [label=docs]
+	dev [label=dev]
+	docs -> dev
+	docs [label=docs]
+	_templates [label=_templates]
+	docs -> _templates
+	docs [label=docs]
+	community [label=community]
+	docs -> community
+	docs [label=docs]
+	_static [label=_static]
+	docs -> _static
+	docs [label=docs]
+	user [label=user]
+	docs -> user
+	".github" [label=".github"]
+	workflows [label=workflows]
+	".github" -> workflows
+	".github" [label=".github"]
+	ISSUE_TEMPLATE [label=ISSUE_TEMPLATE]
+	".github" -> ISSUE_TEMPLATE
+	".git" [label=".git"]
+	objects [label=objects]
+	".git" -> objects
+	objects [label=objects]
+	pack [label=pack]
+	objects -> pack
+	objects [label=objects]
+	info [label=info]
+	objects -> info
+	".git" [label=".git"]
+	hooks [label=hooks]
+	".git" -> hooks
+	".git" [label=".git"]
+	branches [label=branches]
+	".git" -> branches
+	".git" [label=".git"]
+	refs [label=refs]
+	".git" -> refs
+	refs [label=refs]
+	heads [label=heads]
+	refs -> heads
+	refs [label=refs]
+	tags [label=tags]
+	refs -> tags
+	refs [label=refs]
+	remotes [label=remotes]
+	refs -> remotes
+	".git" [label=".git"]
+	logs [label=logs]
+	".git" -> logs
+	logs [label=logs]
+	refs [label=refs]
+	logs -> refs
+	".git" [label=".git"]
+	info [label=info]
+	".git" -> info
+	tests [label=tests]
+	testserver [label=testserver]
+	tests -> testserver
+	tests [label=tests]
+	certs [label=certs]
+	tests -> certs
+	certs [label=certs]
+	valid [label=valid]
+	certs -> valid
+	certs [label=certs]
+	mtls [label=mtls]
+	certs -> mtls
+	certs [label=certs]
+	expired [label=expired]
+	certs -> expired
+	src [label=src]
+	requests [label=requests]
+	src -> requests
 }
