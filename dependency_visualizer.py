@@ -21,7 +21,7 @@ def clone_repository(repo_url, clone_path):
     Repo.clone_from(repo_url, clone_path)
     print('Repository cloned successfully.', clone_path)
 
-def get_dependencies(package_name, depth, max_depth, visited, graph, repo_path):
+def get_dependencies(package_name, depth, max_depth, visited, graph, repo_path,):
     if depth >= max_depth or package_name in visited:
         print(f'Stopping analysis for {package_name}')
         return
